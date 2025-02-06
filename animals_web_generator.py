@@ -1,4 +1,3 @@
-import requests
 import data_fetcher
 
 def read_animal_info(animal, data):
