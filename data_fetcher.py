@@ -1,9 +1,11 @@
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-API_KEY = "tM4bpRLCaOmb2Cv82/3NnA==5zKHBUimftwuIXex"  # Key to access data on AI Ninjas
+API_KEY = os.getenv("API_KEY")
 headers = {"X-Api-Key": API_KEY}
 URL = "https://api.api-ninjas.com/v1/animals"
-
 
 def load_data(animal):
     """
@@ -25,7 +27,3 @@ def load_data(animal):
         return {"error": "Request timed out. Try again later."}
     except requests.exceptions.RequestException as e:
         return {"error": f"API request failed: {e}"}
-
-
-with open(".gitignore", "w") as file:
-    file.write(".env")
