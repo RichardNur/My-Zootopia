@@ -26,3 +26,6 @@ def load_data(animal):
     except requests.exceptions.RequestException as e:
         return {"error": f"API request failed: {e}"}
 
+
+with open(".gitignore", "w") as file:
+    file.write(".env")
