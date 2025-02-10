@@ -26,7 +26,7 @@ def read_animal_info(animal, data):
             animal_info += f'<strong>Type:</strong>{characteristics["type"]}l<br/>\n'
             animal_info += f'</p>\n'
             animal_info += "</li>\n"
-        except KeyError:
+        except (KeyError, IndexError, AttributeError):
             animal_info += f'</p>\n'
             animal_info += "</li>\n"
             continue
