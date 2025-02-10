@@ -16,6 +16,7 @@ def read_animal_info(animal, data):
     for info in data:
         try:
             name, taxonomy, locations, characteristics = info.values()
+
             animal_info += f"\n"
             animal_info += f'<li class="cards__item">\n'
             animal_info += f'<div class="card__title">{name}</div>\n'
