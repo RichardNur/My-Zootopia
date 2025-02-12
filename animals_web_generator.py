@@ -32,6 +32,7 @@ def read_animal_info(animal, data):
             continue
     return animal_info
 
+
 def read_html_template(path):
     """
     Reads an HTML template file.
@@ -46,6 +47,7 @@ def read_html_template(path):
     except FileNotFoundError:
         print(f"Error File '{path}' not found.")
         return ""
+
 
 def create_animals_info_html(text_to_replace, template, animal_info):
     """
@@ -62,6 +64,7 @@ def create_animals_info_html(text_to_replace, template, animal_info):
 
     return template.replace(text_to_replace, animal_info)
 
+
 def write_animals_html(new_path, content):
     """
     :param new_path: File path for the new HTML file.
@@ -76,6 +79,7 @@ def write_animals_html(new_path, content):
     except (FileNotFoundError, IOError) as e:
         print(f"Error writing to file '{new_path}': {e}")
         return False
+
 
 def main():
     """
