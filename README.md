@@ -82,5 +82,5 @@ Feel free to fork the project, create a new branch, and submit a pull request. C
 
 ---
 
-✨ \*\*Created by \*\***[Richard Nur](https://github.com/deburic)** ✨
+✨ \*\*Created by \*\***[Richard Nur](https://github.com/RichardNur)** ✨
 
